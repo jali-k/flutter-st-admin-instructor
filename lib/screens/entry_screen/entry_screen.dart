@@ -348,7 +348,7 @@ class _EntryScreenState extends State<EntryScreen> {
                 ),
               ],
             ),
-            const Gap(10),
+            const Gap(20),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -357,7 +357,7 @@ class _EntryScreenState extends State<EntryScreen> {
                   width: 60,
                   decoration: BoxDecoration(
                       color: AppColors.black,
-                      borderRadius: BorderRadius.circular(25)),
+                      borderRadius: BorderRadius.circular(29)),
                   child: TextButton(
                     onPressed: () {
                       FocusScope.of(context).requestFocus(FocusNode());
@@ -432,6 +432,7 @@ class _EntryScreenState extends State<EntryScreen> {
                                               fontWeight: FontWeight.bold,
                                               color: AppColors.black),
                                         ),
+                                        Gap(5),
                                         Row(
                                           children: [
                                             Visibility(
