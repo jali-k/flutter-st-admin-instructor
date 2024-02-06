@@ -52,7 +52,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
           elevation: 15,
           shadowColor: Colors.black.withOpacity(0.25),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0), // Set border radius
+            borderRadius: BorderRadius.circular(15.0), // Set border radius
           ),
           child: Container(
             // decoration: BoxDecoration(

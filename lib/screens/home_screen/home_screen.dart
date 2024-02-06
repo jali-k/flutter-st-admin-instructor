@@ -65,43 +65,66 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ],
                           ),
-                          const Positioned(
+                          Positioned(
                             top: 75,
                             left: 45,
                             child: SizedBox(
                               height: 40,
                               width: 40,
-                              child: CircleAvatar(
-                                  backgroundColor: AppColors.ligthWhite,
-                                  child: Icon(Icons.add)),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black.withOpacity(0.25),
+                                        offset: const Offset(
+                                          0.0,
+                                          5.0,
+                                        ),
+                                        blurRadius: 10.0,
+                                        spreadRadius: 2.0,
+                                      ), //BoxShadow
+                                      BoxShadow(
+                                        color: Colors.white,
+                                        offset: const Offset(0.0, 0.0),
+                                        blurRadius: 0.0,
+                                        spreadRadius: 0.0,
+                                      ), //BoxShadow
+                                    ],
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: AppColors.ligthWhite),
+                                child: CircleAvatar(
+                                    backgroundColor: AppColors.ligthWhite,
+                                    child: Icon(Icons.add)),
+                              ),
                             ),
                           ),
                           Positioned(
-                            // left: 20,
+                            left: 5,
                             top: 0,
                             child: Container(
                               // height: 35,
                               padding: const EdgeInsets.all(10),
                               decoration: BoxDecoration(
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black.withOpacity(0.25),
-                                      offset: const Offset(
-                                        0.0,
-                                        5.0,
-                                      ),
-                                      blurRadius: 10.0,
-                                      spreadRadius: 2.0,
-                                    ), //BoxShadow
-                                    BoxShadow(
-                                      color: Colors.white,
-                                      offset: const Offset(0.0, 0.0),
-                                      blurRadius: 0.0,
-                                      spreadRadius: 0.0,
-                                    ), //BoxShadow
-                                  ],
-                                  color: AppColors.ligthWhite,
-                                  borderRadius: BorderRadius.circular(20)),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.black.withOpacity(0.25),
+                                    offset: const Offset(
+                                      0.0,
+                                      5.0,
+                                    ),
+                                    blurRadius: 10.0,
+                                    spreadRadius: 2.0,
+                                  ), //BoxShadow
+                                  BoxShadow(
+                                    color: Colors.white,
+                                    offset: const Offset(0.0, 0.0),
+                                    blurRadius: 0.0,
+                                    spreadRadius: 0.0,
+                                  ), //BoxShadow
+                                ],
+                                color: AppColors.ligthWhite,
+                                borderRadius: BorderRadius.circular(20),
+                              ),
                               child: const Center(
                                   child: FittedBox(
                                 child: Text(
@@ -135,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 decoration: const BoxDecoration(
                                   border: Border(
                                     top: BorderSide(
-                                        color: AppColors.red, width: 1.0),
+                                        color: AppColors.red, width: 2.0),
                                     bottom: BorderSide(
                                         color: AppColors.blue, width: 1.0),
                                     left: BorderSide(
@@ -147,19 +170,41 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ],
                           ),
-                          const Positioned(
+                          Positioned(
                             top: 75,
                             left: 45,
                             child: SizedBox(
                               height: 40,
                               width: 40,
-                              child: CircleAvatar(
-                                  backgroundColor: AppColors.ligthWhite,
-                                  child: Icon(Icons.add)),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black.withOpacity(0.25),
+                                        offset: const Offset(
+                                          0.0,
+                                          5.0,
+                                        ),
+                                        blurRadius: 10.0,
+                                        spreadRadius: 2.0,
+                                      ), //BoxShadow
+                                      BoxShadow(
+                                        color: Colors.white,
+                                        offset: const Offset(0.0, 0.0),
+                                        blurRadius: 0.0,
+                                        spreadRadius: 0.0,
+                                      ), //BoxShadow
+                                    ],
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: AppColors.ligthWhite),
+                                child: CircleAvatar(
+                                    backgroundColor: AppColors.ligthWhite,
+                                    child: Icon(Icons.add)),
+                              ),
                             ),
                           ),
                           Positioned(
-                            // left: 2,
+                            left: 1,
                             top: 0,
                             child: Container(
                               height: 35,
@@ -198,7 +243,31 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   ],
-                )
+                ),
+                // Stack(
+                //   children: [
+                //     Container(
+                //       height: 170,
+                //       width: 130,
+                //       decoration: BoxDecoration(
+                //         borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                //         border: Border.all(color: AppColors.red, width: 2.0),
+                //       ),
+                //     ),
+                //     Container(
+                //       height: 170,
+                //       width: 130,
+                //       decoration: BoxDecoration(
+                //         border: Border(
+                //           bottom: BorderSide(color: AppColors.blue, width: 1.0),
+                //           left: BorderSide(color: AppColors.green, width: 1.0),
+                //           right:
+                //               BorderSide(color: AppColors.purple, width: 1.0),
+                //         ),
+                //       ),
+                //     ),
+                //   ],
+                // ),
               ],
             ),
           ),
