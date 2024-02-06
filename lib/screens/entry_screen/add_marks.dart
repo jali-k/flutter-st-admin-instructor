@@ -460,7 +460,7 @@ class _AddMarksState extends State<AddMarks> {
               const Gap(80),
               const Center(
                 child: Text(
-                  "Some Topic",
+                  "Add Marks",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 24,

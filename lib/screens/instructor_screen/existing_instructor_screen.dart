@@ -57,7 +57,7 @@ class _ExistingInstructorScreenState extends State<ExistingInstructorScreen> {
             const Gap(80),
             const Center(
               child: Text(
-                "Manage Instructors",
+                "Current Instructors",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 24,
