@@ -14,6 +14,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        // appBar: AppBar(
+        //   title: Text("Papers and Instructors"),
+        // ),
         backgroundColor: AppColors.backGround,
         body: Container(
           padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -24,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 const Gap(80),
                 const Text(
-                  "Some Topic",
+                  "Add new...",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
@@ -210,25 +213,26 @@ class _HomeScreenState extends State<HomeScreen> {
                               height: 35,
                               padding: const EdgeInsets.all(10),
                               decoration: BoxDecoration(
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black.withOpacity(0.25),
-                                      offset: const Offset(
-                                        0.0,
-                                        5.0,
-                                      ),
-                                      blurRadius: 10.0,
-                                      spreadRadius: 2.0,
-                                    ), //BoxShadow
-                                    BoxShadow(
-                                      color: Colors.white,
-                                      offset: const Offset(0.0, 0.0),
-                                      blurRadius: 0.0,
-                                      spreadRadius: 0.0,
-                                    ), //BoxShadow
-                                  ],
-                                  color: AppColors.ligthWhite,
-                                  borderRadius: BorderRadius.circular(20)),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.black.withOpacity(0.25),
+                                    offset: const Offset(
+                                      0.0,
+                                      5.0,
+                                    ),
+                                    blurRadius: 10.0,
+                                    spreadRadius: 2.0,
+                                  ), //BoxShadow
+                                  BoxShadow(
+                                    color: Colors.white,
+                                    offset: const Offset(0.0, 0.0),
+                                    blurRadius: 0.0,
+                                    spreadRadius: 0.0,
+                                  ), //BoxShadow
+                                ],
+                                color: AppColors.ligthWhite,
+                                borderRadius: BorderRadius.circular(20),
+                              ),
                               child: const Center(
                                   child: FittedBox(
                                 child: Text(
