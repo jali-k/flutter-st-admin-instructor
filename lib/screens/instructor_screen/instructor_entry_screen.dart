@@ -49,7 +49,7 @@ class _InstructorEntryScreenState extends State<InstructorEntryScreen> {
             const Gap(80),
             const Center(
               child: Text(
-                "Some Topic",
+                "Papers By Admin",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 24,
@@ -110,6 +110,7 @@ class _InstructorEntryScreenState extends State<InstructorEntryScreen> {
                                                     fontWeight: FontWeight.bold,
                                                     color: AppColors.black),
                                               ),
+                                              Gap(5),
                                               Row(
                                                 children: [
                                                   Visibility(
@@ -170,7 +171,7 @@ class _InstructorEntryScreenState extends State<InstructorEntryScreen> {
                                             },
                                             icon: const Icon(
                                               Icons.arrow_forward,
-                                              color: AppColors.blue,
+                                              color: AppColors.green,
                                             ))
                                       ],
                                     ),
