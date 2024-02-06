@@ -50,13 +50,14 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         padding: const EdgeInsets.fromLTRB(50, 0, 50, 35),
         child: Card(
           elevation: 15,
-          shadowColor: AppColors.purple,
+          shadowColor: Colors.black.withOpacity(0.25),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10.0), // Set border radius
           ),
           child: Container(
-            decoration: BoxDecoration(
-                border: Border.all(color: AppColors.purple, width: 1)),
+            // decoration: BoxDecoration(
+            //   border: Border.all(color: AppColors.purple, width: 1),
+            // ),
             child: BottomNavigationBar(
               showSelectedLabels: false,
               showUnselectedLabels: false,

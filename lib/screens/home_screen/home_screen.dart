@@ -77,12 +77,29 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                           Positioned(
-                            left: 20,
+                            // left: 20,
                             top: 0,
                             child: Container(
-                              height: 35,
+                              // height: 35,
                               padding: const EdgeInsets.all(10),
                               decoration: BoxDecoration(
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(0.25),
+                                      offset: const Offset(
+                                        0.0,
+                                        5.0,
+                                      ),
+                                      blurRadius: 10.0,
+                                      spreadRadius: 2.0,
+                                    ), //BoxShadow
+                                    BoxShadow(
+                                      color: Colors.white,
+                                      offset: const Offset(0.0, 0.0),
+                                      blurRadius: 0.0,
+                                      spreadRadius: 0.0,
+                                    ), //BoxShadow
+                                  ],
                                   color: AppColors.ligthWhite,
                                   borderRadius: BorderRadius.circular(20)),
                               child: const Center(
@@ -90,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: Text(
                                   'Add a new entity',
                                   style: TextStyle(
-                                      fontSize: 8, color: AppColors.black),
+                                      fontSize: 12, color: AppColors.black),
                                 ),
                               )),
                             ),
@@ -142,12 +159,29 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                           Positioned(
-                            left: 12,
+                            // left: 2,
                             top: 0,
                             child: Container(
                               height: 35,
                               padding: const EdgeInsets.all(10),
                               decoration: BoxDecoration(
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(0.25),
+                                      offset: const Offset(
+                                        0.0,
+                                        5.0,
+                                      ),
+                                      blurRadius: 10.0,
+                                      spreadRadius: 2.0,
+                                    ), //BoxShadow
+                                    BoxShadow(
+                                      color: Colors.white,
+                                      offset: const Offset(0.0, 0.0),
+                                      blurRadius: 0.0,
+                                      spreadRadius: 0.0,
+                                    ), //BoxShadow
+                                  ],
                                   color: AppColors.ligthWhite,
                                   borderRadius: BorderRadius.circular(20)),
                               child: const Center(
@@ -155,7 +189,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: Text(
                                   'Add a new instructor',
                                   style: TextStyle(
-                                      fontSize: 8, color: AppColors.black),
+                                      fontSize: 12, color: AppColors.black),
                                 ),
                               )),
                             ),
