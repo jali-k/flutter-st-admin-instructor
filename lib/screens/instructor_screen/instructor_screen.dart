@@ -166,7 +166,7 @@ class _InstructorScreenState extends State<InstructorScreen> {
             const Gap(80),
             const Center(
               child: Text(
-                "Some Topic",
+                "Manage Instructors",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 24,
@@ -191,7 +191,7 @@ class _InstructorScreenState extends State<InstructorScreen> {
                 ),
               ])),
             ),
-            const Gap(10),
+            const Gap(30),
             Form(
               key: formKey,
               child: Column(
@@ -232,7 +232,7 @@ class _InstructorScreenState extends State<InstructorScreen> {
                       ),
                     ),
                   ),
-                  const Gap(10),
+                  const Gap(20),
                   Center(
                     child: SizedBox(
                       width: width / 2,
@@ -270,7 +270,7 @@ class _InstructorScreenState extends State<InstructorScreen> {
                       width: 60,
                       decoration: BoxDecoration(
                           color: AppColors.black,
-                          borderRadius: BorderRadius.circular(10)),
+                          borderRadius: BorderRadius.circular(29)),
                       child: TextButton(
                         onPressed: () {
                           FocusScope.of(context).requestFocus(FocusNode());

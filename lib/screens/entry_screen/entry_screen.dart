@@ -154,7 +154,7 @@ class _EntryScreenState extends State<EntryScreen> {
             const Gap(80),
             const Center(
               child: Text(
-                "Some Topic",
+                "Manage Papers",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 24,
