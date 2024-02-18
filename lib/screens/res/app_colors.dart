@@ -9,4 +9,5 @@ class AppColors {
   static const Color ligthWhite = Color(0xFFFAFAFA);
   static const Color blue = Colors.blue;
   static const Color grey = Colors.grey;
+  static const Color greyUnSelected = Color.fromARGB(255, 225, 224, 224);
 }
