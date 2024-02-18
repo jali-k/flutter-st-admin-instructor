@@ -39,7 +39,7 @@ class _AddVideoState extends State<AddVideo> {
   void initState() {
     super.initState();
     setState(() {
-      lessons.addAll(['Introduction to Biology', 'Chemical and cellular basis of life', 'Evolution and diversity of organisms', 'Evolution and diversity of organisms', 'Part 1-Animal form and function', 'Part 2-Animal form and function', 'Genetics, Molecular Biology and Recombinant DNA Technology', 'Environmental Biology', 'Microbiology', 'Applied Biology']);
+      lessons.addAll(['ජීව විද්‍යාව හැඳින්වීම', 'ජීවයේ රසායනික හා සෛලීය පදනම', 'ජීවීන්ගේ පරිණාමය හා විවිධත්වය', 'ශාක ආකාරය සහ ක්‍රියාකාරිත්වය', 'සත්ත්ව ආකාරය සහ ක්‍රියාකාරීත්වය 01', 'සත්ත්ව ආකාරය සහ ක්‍රියාකාරීත්වය 02', 'ප්‍රවේණිය', 'අණුක ජීව විද්‍යාව', 'පාරිසරික ජීව විද්‍යාව', 'ක්ෂුද්‍ර ජීව විද්‍යාව', 'ව්‍යවහාරික ජීව විද්‍යාව']);
 
       selectedLesson = lessons.first;
       _selectedDate = DateTime.now();
