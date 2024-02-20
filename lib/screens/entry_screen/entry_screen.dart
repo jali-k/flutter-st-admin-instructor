@@ -432,7 +432,7 @@ class _EntryScreenState extends State<EntryScreen> {
                                               fontWeight: FontWeight.bold,
                                               color: AppColors.black),
                                         ),
-                                        Gap(5),
+                                        const Gap(5),
                                         Row(
                                           children: [
                                             Visibility(

@@ -1,3 +1,7 @@
+import 'dart:io';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 class Paper {
   String paperId = '';
   String paperName = '';
@@ -16,11 +20,59 @@ class Paper {
 class Instructor {
   String instructorId = '';
   String email = '';
-   String docId = '';
+  String docId = '';
 
-  Instructor({
-    required this.instructorId,
-    required this.email,
-    required this.docId
-  });
+  Instructor(
+      {required this.instructorId, required this.email, required this.docId});
+}
+
+class Video {
+  File? videoFile;
+  File? thumbnail;
+  String title = '';
+  String description = '';
+  String lesson = '';
+  String date = '';
+  bool isVideo = false;
+  String videoFileName = '';
+
+  Video(
+      {required this.videoFile,
+      required this.thumbnail,
+      required this.title,
+      required this.description,
+      required this.lesson,
+      required this.date,
+      required this.isVideo,
+      required this.videoFileName});
+}
+
+class Folder {
+  String folderName = '';
+  List<dynamic> emailList = [];
+  String docId = '';
+  late Timestamp uploadedDate;
+
+  Folder(
+      {required this.folderName,
+      required this.emailList,
+      required this.uploadedDate,
+      required this.docId
+      });
+}
+
+class VideoDetail {
+  String videoId = '';
+  String docId = '';
+  String videoPath = '';
+   String videoDocId = '';
+  
+
+  VideoDetail(
+      {
+      required this.docId,
+      required this.videoId,
+      required this.videoPath,
+      required this.videoDocId
+      });
 }

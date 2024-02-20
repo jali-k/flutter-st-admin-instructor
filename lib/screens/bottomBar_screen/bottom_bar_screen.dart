@@ -1,3 +1,4 @@
+import 'package:educator_app/screens/add_folder_screen/folder_list_screen.dart';
 import 'package:educator_app/screens/entry_screen/entry_screen.dart';
 import 'package:educator_app/screens/home_screen/home_screen.dart';
 import 'package:educator_app/screens/instructor_screen/instructor_screen.dart';
@@ -7,10 +8,12 @@ import 'package:flutter/material.dart';
 class BottomBarScreen extends StatefulWidget {
   final bool isEntryScreen;
   final bool isInstructorScreen;
+  final bool isAddFolderScreen;
   const BottomBarScreen(
       {super.key,
       required this.isEntryScreen,
-      required this.isInstructorScreen});
+      required this.isInstructorScreen,
+      required this.isAddFolderScreen});
 
   @override
   State<BottomBarScreen> createState() => _BottomBarScreenState();
@@ -28,10 +31,16 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         ? _selectedBottomNavBarItemIndex = 1
         : widget.isInstructorScreen
             ? _selectedBottomNavBarItemIndex = 2
-            : _selectedBottomNavBarItemIndex = 0;
+            : widget.isAddFolderScreen
+                ? _selectedBottomNavBarItemIndex = 3
+                : _selectedBottomNavBarItemIndex = 0;
 
-    bottomNavBarItems.addAll(
-        [const HomeScreen(), const EntryScreen(), const InstructorScreen()]);
+    bottomNavBarItems.addAll([
+      const HomeScreen(),
+      const EntryScreen(),
+      const InstructorScreen(),
+      const FolderListScreen()
+    ]);
 
     super.initState();
   }
@@ -68,6 +77,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
                 BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
                 BottomNavigationBarItem(icon: Icon(Icons.file_copy), label: ''),
                 BottomNavigationBarItem(icon: Icon(Icons.people), label: ''),
+                BottomNavigationBarItem(icon: Icon(Icons.folder), label: ''),
               ],
               currentIndex: _selectedBottomNavBarItemIndex,
               selectedItemColor: AppColors.green,
